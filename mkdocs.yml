@@ -28,7 +28,7 @@ theme: # Тема сайта, информация о ее параметрах
       primary: deep purple
       accent: blue
   features: # настройки функциональностей темы
-    - navigation.sections # Добавление разделов верхнего уровня в боковом меню, отключение спойлеров в боковом меню
+    #- navigation.sections # Добавление разделов верхнего уровня в боковом меню, отключение спойлеров в боковом меню
     - navigation.path # Хлебные крошки
     - navigation.indexes # Позволяет создавать корневые страницы разделов меню. Корневая страница должна лежать в папке раздела и называться index.md. Пример использования корневых страниц приведен ниже в настройках nav
     #- navigation.tabs # Верхнее меню
@@ -42,14 +42,14 @@ theme: # Тема сайта, информация о ее параметрах
     - content.code.copy # Кнопка копирования в блоке кода
 
 nav:
-  - Обо мне: 
-    - index.md
-    - Инструкции:
-      - instructions/index.md
-      - Локомотив Тревитика: instructions/page-2.md
-      - Проблемы:
-        - instructions/problems/index.md
-        - Поломка в двигателе: instructions/problems/page-3.md
+  - Главная страница: index.md
+  - Инструкции:
+    - instructions/index.md
+    - Firewall: instructions/firewall.md
+  - Концепции:
+    - About GIT: concepts/about-git.md
+  - Регламенты:
+    - Стайлгайд: rules/styleguide.md
 
 markdown_extensions:
   - admonition # Поддержка информационных панелей (сообщений типа «Внимание», «Совет», «Примечание», etc.)
