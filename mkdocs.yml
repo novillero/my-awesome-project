@@ -69,3 +69,10 @@ markdown_extensions:
 
 plugins:
   - search
+  - tags:
+      tags_allowed:
+      - manuals
+      - portfolio
+      - help
+      - rules
+  - glightbox
