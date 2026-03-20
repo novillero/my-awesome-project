@@ -1,0 +1,26 @@
+[data-md-color-scheme="tech"] {
+    --md-primary-fg-color: #5677E5;
+    --md-accent-fg-color: #1C3895;
+    --md-default-bg-color: #d2dcfb;
+    --md-footer-bg-color: #5677E5;
+    --md-default-fg-color: #484747;
+    --md-code-fg-color: #484747;
+    --md-default-fg-color--light: #484747;
+
+}
+
+/*Параметры текста статей*/
+.md-typeset {
+    font-family: 'Tahoma', 'arial';
+    font-weight: 200;
+    font-size: 16px;
+    color: #4b5563;
+}
+/*Параметры текста nav и toc*/
+.md-nav {
+    font-family: 'Tahoma', 'arial';
+    font-weight: 400;
+    font-size: 16px;
+    color: #4b5563;
+}
+

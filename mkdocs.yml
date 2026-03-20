@@ -9,24 +9,8 @@ theme: # Тема сайта, информация о ее параметрах
   language: ru # Язык
   palette: # Настройки светлой и тёмной тем
     # Настройки светлой темы
-    - scheme: default 
-      toggle:
-        icon: material/weather-sunny # Иконка для активации светлой темы
-        name: Выключить солнышко # Всплывающий текст-подсказка
-      primary: blue # Основной цвет
-      accent: purple # Акцентный цвет
-      # вы можете использовать любой цвет из списка: 
-      # red; pink; purple; deep purple; indigo; blue; light blue; cyan; teal; 
-      # green; light green; lime; yellow; amber; orange; deep orange; brown; 
-      # grey; blue grey; black; white
-
-    # Настройки тёмной темы
-    - scheme: slate
-      toggle:
-        icon: material/weather-night
-        name: Позвать солнышко
-      primary: deep purple
-      accent: blue
+    - scheme: tech
+    
   features: # настройки функциональностей темы
     #- navigation.sections # Добавление разделов верхнего уровня в боковом меню, отключение спойлеров в боковом меню
     - navigation.path # Хлебные крошки
@@ -54,6 +38,9 @@ nav:
     - Swagger API: api/swagger-api.md
     - Redoc API: api/redoc-api.md
   - Сценарий 1: scenario-1.md
+
+extra_css:
+  - stylesheets/extra.css
 
 markdown_extensions:
   - admonition # Поддержка информационных панелей (сообщений типа «Внимание», «Совет», «Примечание», etc.)
@@ -84,3 +71,5 @@ plugins:
   - redoc-tag
   - plantuml:
       puml_url: https://www.plantuml.com/plantuml/
+      theme:
+        enabled: false
